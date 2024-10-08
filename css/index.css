@@ -131,6 +131,7 @@ header {
    box-shadow: 0 0 10px #060606;
    cursor: pointer;
    margin-top: 10px;
+   
 }
 
 .imagen-light {
@@ -267,4 +268,13 @@ footer {
    height: 4px;
    background: #fff;
    margin-bottom: 60px;
+}
+.imagen-zoom {
+   transition: transform 0.3s ease; /* Transición suave al agrandar */
+   cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+
+.imagen-zoom.agrandada {
+   transform: scale(1.5); /* Aumenta el tamaño de la imagen al hacer clic */
+   z-index: 200; /* Asegura que la imagen se muestre encima de las demás */
 }
