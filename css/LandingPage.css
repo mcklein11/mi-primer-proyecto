@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  sans-serif;
+}
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.icono{
+    animation:  moverizquierda 2s ease-in;
+    z-index: 100;
+}
+header{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+img{
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    width: auto;
+    animation: moverarriba 2s ease-in;
+}
+.textos{
+    width: 50%;
+    color: white;
+    animation:  moverizquierda 2s ease-in;
+}
+.textos h1{
+    font-size: 70px;
+    animation:  moverderecha 2s ease-in;
+}
+.textos h2{
+    font-size: 40px;
+    animation:  moverizquierda 2s ease-in;
+}
+.textos a{
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 150px;
+    text-align: center;
+    animation:  moverarriba 2s ease-in;
+}
+.wade{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    background-color: blue;
+    width: 100%;
+    transition: all 1s ease;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+.uno{
+    -webkit-clip-path: circle(0% at 0 0);
+     clip-path: circle(0% at 0 0);
+}
+.dos{
+    -webkit-clip-path: circle(150% at 0 0);
+     clip-path: circle(150% at 0 0);
+}
+@keyframes moverizquierda {
+0%{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+100%{
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+@keyframes moverderecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+    @keyframes moverarriba{
+        0%{
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+        }

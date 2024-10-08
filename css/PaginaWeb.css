@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 50px 0;
+
+}
+header{
+    height: 80vh;
+     background-image: linear-gradient(to top, rgb(207, 217, 223, 0.4) 0%, rgb(226, 235, 240, 0.4) 100%), url(../Imagenes2/ai-generated-8822952_1280.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+}
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+}
