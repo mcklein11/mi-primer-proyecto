@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+.container-1 {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu {
+    font-size: 28px;
+    
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    font-weight: 800;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.container {
+    text-align: center;
+}
+
+.imagenes {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin: 20px;
+    box-shadow: 0 0 10px black;
+    border-radius: 5%;
+}
+
+.subtitulo {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.container-section {
+    text-align: center;
+    margin: 10px;
+}
+
+main {
+    background-color: rgb(0, 0, 139,0.5);
+    height: 100%;
+    width: auto;
+}
+
+.copy {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.pie-pagina {
+    font-size: 30px;
+    background: black;
+    color: #fff;
+    text-align: center;
+
+}
+
+.imagenes:hover {
+    animation: mover 0.5s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes mover {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
