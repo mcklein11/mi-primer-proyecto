@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hero{
+   height: 700px;
+   background-image:linear-gradient(120deg, #f6d365 0%, #fda085 100%) ;
+   padding: 70px 0;
+
+}
+.hero_container{
+    width: 90%;
+    height: 100%;
+    color: #fff;
+    padding: inherit;
+    text-align: center;
+    overflow: hidden;
+}
+.hero_title{
+    font-size: 60px;
+font-weight: 500;
+}
+.hero_parafo{
+    width:60%;
+    margin: 15px auto;
+    font-size: 25px;
+}
+.hero_cta{
+   display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px 25px;
+    color: #fda085;
+    border-radius: 50px;
+}
+.hero_cta:hover{
+    cursor: pointer;
+    background-color: #fda085;
+    color: white;
+}
+.hero_imagen_1{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.hero_img{
+    width: 100%;
+    display: block;
+}
+.wade{
+    height: 100px;
+    width: 100%;
+    background-image:linear-gradient(120deg, #f6d365 0%, #fda085 100%) ;
+}
