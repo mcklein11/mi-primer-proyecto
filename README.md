@@ -4,7 +4,7 @@
 ## Descripción
 Esta es una página web simple creada con HTML y CSS. Muestra las habilidades básicas de diseño web y se puede utilizar como punto de partida para proyectos más complejos.
 
-###Tecnologías Utilizadas
+## Tecnologías Utilizadas
 HTML5: Estructura básica de la página.
 CSS3: Estilos y diseño visual.
 
