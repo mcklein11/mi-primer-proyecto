@@ -1,26 +1,73 @@
 "user strict"
-window.addEventListener("load", () => {
-  
-  var div_usuario=document.querySelector('#usuarios');
-    function getusuarios() {
-    return fetch('https://reqres.in/api/users?page=2');
-  }
-  getusuarios().then(function (data) {
-    return data.json();
-  }).then(users=>{
-console.log(users.data);
-listadodeusuarios(users,data);
-  });
-  function listadodeusuarios(usuarios) {
-    usuarios.map((user,i)=>{
-let nombre= document.createElement('h3');
-nombre.innerHTML= i+'-'+user.first_name+'-'+ user.last_name;
+function Cargaranimaciones() {
+  $(function () {
+    $('.chart1').easyPieChart({
+      size: 160,
+      barColor: "#32c595",
+      scaleLength: 0,
+      lineWidth: 15,
+      tackColor: "#525151",
+      lineCap: "circle",
+     animate: 2000,
+    });
+    $('.chart2').easyPieChart({
+      size: 160,
+      barColor: "#32c595",
+      scaleLength: 0,
+      lineWidth: 15,
+      tackColor: "#525151",
+      lineCap: "circle",
+     animate: 2000,
+    });
+    $('.chart3').easyPieChart({
+      size: 160,
+      barColor: "#32c595",
+      scaleLength: 0,
+      lineWidth: 15,
+      tackColor: "#525151",
+      lineCap: "circle",
+     animate: 2000,
+    });
+    $('.chart4').easyPieChart({
+      size: 160,
+      barColor: "#32c595",
+      scaleLength: 0,
+      lineWidth: 15,
+      tackColor: "#525151",
+      lineCap: "circle",
+     animate: 2000,
+    });
+    $('.chart5').easyPieChart({
+      size: 160,
+      barColor: "#32c595",
+      scaleLength: 0,
+      lineWidth: 15,
+      tackColor: "#525151",
+      lineCap: "circle",
+     animate: 2000,
+    });
+    $('.chart6').easyPieChart({
+      size: 160,
+      barColor: "#32c595",
+      scaleLength: 0,
+      lineWidth: 15,
+      tackColor: "#525151",
+      lineCap: "circle",
+     animate: 2000,
+    });
+  })
+}
 
-div_usuario.appendChild(nombre);
-});
-  }
-});
-  
+Cargaranimaciones();
+
+
+
+
+
+
+
+
+
 
 
 

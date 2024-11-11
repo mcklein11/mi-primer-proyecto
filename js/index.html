@@ -1,23 +1,316 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  <script type="text/javascript" src="index.js"></script>
-  </head>
-  <body>
-    <h1 id="encabezado">hola soy mcklein</h1>
-    <p >
-<button id="start" >start</button>
-<button id="stop">stop</button>
-<button id="boton">presioname</button>
-    </p>
-    <form >
-      <imput type="text" id="campo_nombre" nombre="nombre"></imput>
-    </form>
-  
 
-  </body>  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+    integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>mcklein</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../iconos/disenador-grafico.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/programa.css">
+</head>
+
+<body>
+  <span class="sombra">
+    <section id="inicio" class="inicio">
+      <div class="contenido">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-laptop"></i>
+            <h1>Mcklein</h1>
+          </div>
+          <nav id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#trabajos">Trabajos</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+          <div id="icono-nav">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </header>
+        <div class="fila">
+          <div class="col">
+            <h2>Desarrollador</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos minus voluptates id. Architecto
+              necessitatibus saepe, </p>
+            <button class="btn btn-1">Descargar CV</button>
+          </div>
+          <div class="col">
+            <div class="contenedor-img">
+              <img src="../iconos/11260839-removebg-preview.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </span>
+  <section id="servicios" class="servicios">
+    <div class="fila">
+      <div class="col">
+        <div class="card">
+          <div class="icono color1">
+            <div class="circulo">
+              <i class="fa-solid fa-code"></i>
+            </div>
+          </div>
+          <h3>Diseño Web</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias laborum reiciendis et recusandae
+            sequi excepturi beatae.</p>
+          <a href="#">Lerr mas</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="icono color2">
+            <div class="circulo">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+          </div>
+          <h3>Diseño Grafico</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias laborum reiciendis et recusandae
+            sequi excepturi beatae. </p>
+          <a href="#">Lerr mas</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="icono color3">
+            <div class="circulo">
+              <i class="fa-solid fa-video"></i>
+            </div>
+          </div>
+          <h3>Animaciones</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias laborum reiciendis et recusandae
+            sequi excepturi beatae. </p>
+          <a href="#">Lerr mas</a>
+        </div>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="col">
+        <div class="card">
+          <div class="icono color4">
+            <div class="circulo">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+          </div>
+          <h3>Marketing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias laborum reiciendis et recusandae
+            sequi excepturi beatae. </p>
+          <a href="#">Lerr mas</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="icono color5">
+            <div class="circulo">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+          </div>
+          <h3>Soportes Clientes</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias laborum reiciendis et recusandae
+            sequi excepturi beatae. </p>
+          <a href="#">Lerr mas</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="icono color6">
+            <div class="circulo">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          <h3>Tiendas</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias laborum reiciendis et recusandae
+            sequi excepturi beatae.</p>
+          <a href="#">Lerr mas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="habilidades" id="habilidades">
+    <div class="contenedor-habi">
+      <h2>Habilidades</h2>
+      <div class="fila">
+        <div class="col">
+          <div class="score">
+            <div class="box">
+              <div class="chart chart1" data-percent="50">
+                60%
+              </div>
+              <h2>HTML & CSS</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="score">
+            <div class="box">
+              <div class="chart chart2" data-percent="40">
+                40%
+              </div>
+              <H2>BOOSTRAP</H2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="score">
+            <div class="box">
+              <div class="chart  chart3" data-percent="40">
+                40%
+              </div>
+              <h2>JAVASCRIPT</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="col">
+          <div class="score">
+            <div class="box">
+              <div class="chart chart4" data-percent="40">
+                40%
+              </div>
+              <h2>MYSQL</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="score">
+            <div class="box">
+              <div class="chart chart5" data-percent="30">
+                30%
+              </div>
+              <H2>PHP</H2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="score">
+            <div class="box">
+              <div class="chart chart6" data-percent="40">
+                40%
+              </div>
+              <h2>PHOTOSHOP</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trabajos" id="trabajos">
+    <h2>Mis Trabajos</h2>
+    <nav>
+      <a href="javascript:void(0)" class="borde" id="item">Todos</a>
+      <a href="javascript:void(0)" class="borde" id="Diseño">Diseño</a>
+      <a href="javascript:void(0)" class="borde" id="programacion">Programacion</a>
+      <a href="javascript:void(0)" class="borde" id="animaciones">Animaciones</a>
+    </nav>
+
+    <div class="galeria">
+      <div class="item Diseño">
+        <img src="../images/rb_114320.png" alt="">
+        <div class="info">
+          <h2>Titulo del Trabajo</h2>
+          <span>HTML</span><span>CSS</span>
+          <a href="#">Ver Trabajo</a>
+        </div>
+      </div>
+      <div class="item programacion">
+        <img src="../images/91f838af-78df-4ce7-8539-640d2588bb33.jpg" alt="">
+        <div class="info">
+          <h2>Titulo del Trabajo</h2>
+          <span>HTML</span><span>CSS</span>
+          <a href="#">Ver Trabajo</a>
+        </div>
+      </div>
+      <div class="item animaciones">
+        <img src="../images/3d-geometrico.jpg" alt="">
+        <div class="info">
+          <h2>Titulo del Trabajo</h2>
+          <span>HTML</span><span>CSS</span>
+          <a href="#">Ver Trabajo</a>
+        </div>
+      </div>
+      <div class="item Diseño">
+        <img src="../images/3845.jpg" alt="">
+        <div class="info">
+          <h2>Titulo del Trabajo</h2>
+          <span>HTML</span><span>CSS</span>
+          <a href="#">Ver Trabajo</a>
+        </div>
+      </div>
+      <div class="item animaciones">
+        <img src="../images/Enhance-Your-Website-With-CSS-Animations-Hero-Image.jpg" alt="">
+        <div class="info">
+          <h2>Titulo del Trabajo</h2>
+          <span>HTML</span><span>CSS</span>
+          <a href="#">Ver Trabajo</a>
+        </div>
+      </div>
+      <div class="item programacion">
+        <img src="../images/8adca376-90e5-4e4f-996a-07a0d20d601d.jpg" alt="">
+        <div class="info">
+          <h2>Titulo del Trabajo</h2>
+          <span>HTML</span><span>CSS</span>
+          <a href="#">Ver Trabajo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacto" id="contacto">
+    <div class="contenedor-contacto">
+      <h2>Contacto</h2>
+      <div class="fila">
+        <div class="col">
+          <div class="info">
+            <h3>Email</h3>
+            <p>Colomboalvareznumamcklein@gmail.com</p>
+          </div>
+          <div class="info">
+            <h3>Telefono</h3>
+            <p>+58 424-375-47-14</p>
+          </div>
+          <div class="info">
+            <h3>Pais</h3>
+            <p>Venezuela</p>
+          </div>
+          <div class="info">
+            <h3>Ciudad</h3>
+            <p>La Victoria Edo Aragua</p>
+          </div>
+        </div>
+        <div class="col">
+          <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Correo">
+              <textarea name="" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+              <input type="submit" value="Enviar" class="btn">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Creado por Codigo Web Mcklein Colombo---2024</p>
+
+  </footer>
+
+  <script src="index.js"></script>
+</body>
 
 </html>

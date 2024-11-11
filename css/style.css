@@ -147,13 +147,89 @@ font-weight: 400;
 }
 .pie{
     background-color: var(--Very-Dark-Cyan);
-    width: inherit;
-    color: white;
-    height: 300px;
-    padding: var(--padding-container);
-    padding-left: 40px;
-}
-
-.pie_pagina{
-    padding-top: 20px;
-}
+    padding: 2rem 0; 
+   align-items: center;
+  }
+  
+  /* Container for footer content */
+  .pie_pagina {
+    display: flex; /* Arrange elements horizontally */
+    flex-direction: column; /* Stack elements vertically (optional) */
+    align-items: flex-start; /* Align content to the left */
+    width: 80%; /* Limit width to prevent overflow (optional) */
+    margin: 0 auto; /* Center container horizontally (optional) */
+  }
+  
+  /* Logo styling */
+  .pie_huddle {
+    width: 200px; /* Adjust width based on your logo size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Footer content paragraph */
+  .pie_lorem {
+    color: #fff; /* Darker text color */
+    font-size: 16px; /* Smaller font size for readability */
+    margin: 10px 1rem; /* Add some margin for spacing */
+  }
+  
+ 
+  .pie_phone,
+  .pie_gmail {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Subtitle for newsletter section */
+  .pie_subtitle {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Left-align content */
+  }
+  
+  /* Newsletter subtitle */
+  .subtitle {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem; /* Add margin below subtitle */
+  }
+  
+  /* Newsletter paragraph */
+  .pie_paragraph {
+    color: #fff; /* Lighter text color for description */
+    font-size: 16px;
+    line-height: 1.2; /* Slightly increase line height for better readability */
+    margin-bottom: 0.5rem; /* Add margin below paragraph */
+  }
+  
+  /* Input field for newsletter signup */
+  #myInput {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 3px; /* Rounded corners */
+    padding: 0.5rem; /* Add some padding for user input */
+    width: 150px; /* Adjust width as needed */
+    font-size: 0.8rem; /* Consistent font size */
+  }
+  
+  /* Placeholder text for input field */
+  #myInput::placeholder {
+    color: #999; /* Lighter placeholder text */
+  }
+  
+  /* Subscribe button */
+  .pie_suscribe {
+    background-color:hsl(321, 100%, 78%); /* Blue background */
+    color: #fff; /* White text */
+    padding: 0.75rem 1rem; /* Adjust padding for desired button size */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable action */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.8rem; /* Consistent font size */
+  }
+  
+  /* Hover effect for subscribe button */
+  .pie_suscribe:hover {
+    background-color: #0069d9; /* Slightly darker blue on hover */
+  }
