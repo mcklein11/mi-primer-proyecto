@@ -17,7 +17,7 @@
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     position: fixed;
     width: 100%;
-    height: 55px;
+    height: 80px;
     animation: moverderecha 1s ease-in;
 }
 
@@ -43,10 +43,11 @@
     font-size: 24px;
     color: black;
     font-weight: bold;
+    transition: all .3s ease;
 }
 
 .nav_link:hover {
-    background-color: grey;
+    color: white;
 }
 
 .contenedor {
@@ -59,7 +60,7 @@
     font-size: 40px;
     text-align: center;
     font-weight: bold;
-    padding-top: 60px;
+    padding-top: 90px;
 }
 
 .subtitle-3 {
@@ -78,6 +79,14 @@
 
 }
 
+.contenedor-cards{
+    max-width: 1200px;
+    margin: 20px auto;
+  display: flex;
+flex: 0 0 calc(33.3% -100px);
+justify-content: space-between;
+
+}
 .cards {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     width: 300px;
@@ -89,6 +98,7 @@
     border-radius: 20px;
 }
 
+
 .cards_imagen {
     width: 80%;
     height: 225px;
@@ -99,7 +109,7 @@
 
 .cards_parafo_1 {
     font-size: 16px;
-    text-align: center justify;
+    text-align: left justify;
     color: black;
     font-weight: 900;
     line-height: 1.25;
@@ -181,7 +191,7 @@
 .pie_pagina_logo-1 i {
     font-size: 30px;
     line-height: 35px;
-    align-items: center;
+    margin:auto 3px;
 }
 
 .gallery {

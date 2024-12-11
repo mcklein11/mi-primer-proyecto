@@ -145,91 +145,104 @@ line-height: 1.5;
 font-weight: 400;
 
 }
+
 .pie{
-    background-color: var(--Very-Dark-Cyan);
-    padding: 2rem 0; 
-   align-items: center;
-  }
-  
-  /* Container for footer content */
-  .pie_pagina {
-    display: flex; /* Arrange elements horizontally */
-    flex-direction: column; /* Stack elements vertically (optional) */
-    align-items: flex-start; /* Align content to the left */
-    width: 80%; /* Limit width to prevent overflow (optional) */
-    margin: 0 auto; /* Center container horizontally (optional) */
-  }
-  
-  /* Logo styling */
-  .pie_huddle {
-    width: 200px; /* Adjust width based on your logo size */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Footer content paragraph */
-  .pie_lorem {
-    color: #fff; /* Darker text color */
-    font-size: 16px; /* Smaller font size for readability */
-    margin: 10px 1rem; /* Add some margin for spacing */
-  }
-  
- 
-  .pie_phone,
-  .pie_gmail {
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  /* Subtitle for newsletter section */
-  .pie_subtitle {
+    background: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Blue);
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 40px;
+   padding: 40px 80px;
+}
+
+.pie_pagina img{
+   width: 200px;
+   padding-bottom: 10px;
+}
+
+.pie_pagina p{
+font-size: 18px;
+font-family: var(--Poppins);
+ letter-spacing: 1px;
+ padding-bottom: 10px;
+}
+
+.pie_pagina h4{
+    font-family: var(--Poppins);
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.telefono{
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Left-align content */
-  }
-  
-  /* Newsletter subtitle */
-  .subtitle {
-    color: #fff;
-    font-size: 1rem;
-    margin-bottom: 0.5rem; /* Add margin below subtitle */
-  }
-  
-  /* Newsletter paragraph */
-  .pie_paragraph {
-    color: #fff; /* Lighter text color for description */
+    align-items: center;
+    padding: 5px 0px;
+}
+
+
+.telefono h4{
+    padding-top: 15px;
+}
+.telefono i{
+    vertical-align: middle;
+    font-size: 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+.email h4{
+    padding-top: 15px;
+}
+
+.email i{
+    vertical-align: middle;
+    font-size: 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.pie_pagina2 h2{
+font-size: 35px;
+}
+
+.pie_pagina2 p{
     font-size: 16px;
-    line-height: 1.2; /* Slightly increase line height for better readability */
-    margin-bottom: 0.5rem; /* Add margin below paragraph */
-  }
-  
-  /* Input field for newsletter signup */
-  #myInput {
-    background-color: #fff; /* White background */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 3px; /* Rounded corners */
-    padding: 0.5rem; /* Add some padding for user input */
-    width: 150px; /* Adjust width as needed */
-    font-size: 0.8rem; /* Consistent font size */
-  }
-  
-  /* Placeholder text for input field */
-  #myInput::placeholder {
-    color: #999; /* Lighter placeholder text */
-  }
-  
-  /* Subscribe button */
-  .pie_suscribe {
-    background-color:hsl(321, 100%, 78%); /* Blue background */
-    color: #fff; /* White text */
-    padding: 0.75rem 1rem; /* Adjust padding for desired button size */
-    border: none; /* Remove default border */
-    border-radius: 3px; /* Rounded corners */
-    cursor: pointer; /* Indicate clickable action */
-    text-decoration: none; /* Remove underline */
-    font-size: 0.8rem; /* Consistent font size */
-  }
-  
-  /* Hover effect for subscribe button */
-  .pie_suscribe:hover {
-    background-color: #0069d9; /* Slightly darker blue on hover */
-  }
+    font-family: var(--Poppins);
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    }
+
+    .formulario-suscripcion {
+        text-align: left; /* Centra el contenido */
+      }
+      
+      .formulario-suscripcion input,
+      .formulario-suscripcion button {
+        display: block; /* Hace que cada elemento ocupe toda la línea */
+        margin: 10px; /* Añade márgenes arriba y abajo, y centra horizontalmente */
+        width: 150px; /* Ajusta el ancho según tus necesidades */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .formulario-suscripcion input{
+        width: 50%;
+      }
+      
+      .formulario-suscripcion button {
+        background-color: var(--Light-Pink);
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        
+      }
